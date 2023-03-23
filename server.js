@@ -192,12 +192,8 @@ http.createServer(function(request, res) {
 		break;
 
 
-	case '/404':
-		serverStaticFile(res, '/public/404.html', 'text/html');
-		break;
-
 	default:
-		serverStaticFile(res,'/public/404','text/html', 404);
+		serverStaticFile(res,'/public/404.html','text/html', 404);
 		break;
 	}
 
